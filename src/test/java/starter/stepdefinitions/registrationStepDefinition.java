@@ -39,7 +39,7 @@ public class registrationStepDefinition {
         );
     }
 
-    @Then("{actor} clicks on {string} button for {string}")
+    @Then("{actor} clicks on {string} button to {string}")
     public void clicksButton(Actor actor, String parameter, String value) {
         actor.attemptsTo(
                 functionsCollection.Button(parameter,value)
