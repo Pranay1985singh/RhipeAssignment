@@ -4,7 +4,7 @@ import io.cucumber.java.ParameterType;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.actors.OnStage;
 
-public class ParameterDefinitions {
+public class parameterDefinitions {
 
     @ParameterType(".*")
     public Actor actor(String actorName) {

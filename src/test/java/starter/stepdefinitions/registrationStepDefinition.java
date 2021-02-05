@@ -8,10 +8,11 @@ import io.cucumber.java.en.When;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.actors.OnStage;
 import net.serenitybdd.screenplay.actors.OnlineCast;
-import starter.navigation.NavigateTo;
-import starter.testCases.Test01_Registration;
+import starter.navigation.navigateTo;
+import starter.common.functionsCollection;
 
 public class registrationStepDefinition {
+
 
     @Before
     public void setTheStage() {
@@ -21,35 +22,27 @@ public class registrationStepDefinition {
     @Given("{actor} is on the Sign up with Rhipe home page on the internet")
     public void navigateToHomePage(Actor actor) {
         actor.wasAbleTo(
-                NavigateTo.theRhipeRegistrationHomePage());
+                navigateTo.theRhipeRegistrationHomePage());
     }
 
     @When("{actor} fills his {string} as {string}")
     public void enterEditBox(Actor actor, String parameter, String value) {
         actor.attemptsTo(
-                Test01_Registration.about(parameter,value)
+                functionsCollection.TextBox(parameter,value)
         );
     }
-
-    @And("{actor} fills {string} as {string}")
-    public void enterEditBox1(Actor actor, String parameter, String value) {
-        actor.attemptsTo(
-                Test01_Registration.about(parameter,value)
-        );
-    }
-
 
     @And("{actor} selects option for {string} as {string}")
     public void selectFromDropdown(Actor actor, String parameter, String value) {
         actor.attemptsTo(
-                Test01_Registration.about(parameter,value)
+                functionsCollection.DropDown(parameter,value)
         );
     }
 
     @Then("{actor} clicks on {string} button for {string}")
     public void clicksButton(Actor actor, String parameter, String value) {
         actor.attemptsTo(
-                Test01_Registration.about(parameter,value)
+                functionsCollection.Button(parameter,value)
         );
     }
 }
