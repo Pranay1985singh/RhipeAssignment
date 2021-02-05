@@ -18,5 +18,5 @@ Feature: Rhipe program officer Registration
     And he fills his "PrimaryContactLastName" as "Singh"
     And he fills his "PrimaryContactPhone" as "44444444"
     And he fills his "PrimaryContactEmail" as "singh@xyz.com"
-    Then he clicks on "submitbutton" button for "Submission"
+    Then he clicks on "submitbutton" button for "Sign Up"
 
