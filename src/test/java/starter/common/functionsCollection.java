@@ -26,7 +26,7 @@ public class functionsCollection {
 
     public static Performable Button(String parameter, String value) {
         return Task.where("{0} Clicks on '" + parameter + "' for '"+value+"'"
-//                //Below code has been commented as application does not need to submitted.
+//                //Below code has been commented as application does not need to be submitted.
 //                Click.on(Target.the(parameter)
 //                                .locatedBy("#"+parameter))
         );
