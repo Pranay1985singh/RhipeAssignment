@@ -8,7 +8,7 @@ Feature: Rhipe program officer Registration
     And he fills his "Street1" as "6 Railway Road, Cheltenham"
     And he fills his "City" as "Melbourne"
     And he fills his "State" as "Victoria"
-    And he fills his "Country" as "Australia"
+    And he selects option for "Country" as "Australia"
     And he fills his "Postcode" as "3192"
     And he fills his "MainPhone" as "123456789"
     And he fills his "WebUrl" as "https://www.rhipe.com/"
